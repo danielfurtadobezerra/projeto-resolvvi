@@ -1,0 +1,47 @@
+<%= form_with(model: problema_negativado) do |form| %>
+  <% if problema_negativado.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(problema_negativado.errors.count, "error") %> prohibited this problema_negativado from being saved:</h2>
+
+      <ul>
+        <% problema_negativado.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :divida, style: "display: block" %>
+    <%= form.text_field :divida %>
+  </div>
+
+  <div>
+    <%= form.label :categoria, style: "display: block" %>
+    <%= form.text_field :categoria %>
+  </div>
+
+  <div>
+    <%= form.label :usuario, style: "display: block" %>
+    <%= form.text_field :usuario %>
+  </div>
+
+  <div>
+    <%= form.label :endereco, style: "display: block" %>
+    <%= form.text_field :endereco %>
+  </div>
+
+  <div>
+    <%= form.label :provas, style: "display: block" %>
+    <%= form.text_field :provas %>
+  </div>
+
+  <div>
+    <%= form.label :advogado, style: "display: block" %>
+    <%= form.text_field :advogado %>
+  </div>
+<br>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

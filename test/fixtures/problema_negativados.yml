@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  divida: MyString
+  categoria: MyString
+  usuario: MyString
+  endereco: MyString
+  provas: MyString
+  advogado: MyString
+
+two:
+  divida: MyString
+  categoria: MyString
+  usuario: MyString
+  endereco: MyString
+  provas: MyString
+  advogado: MyString

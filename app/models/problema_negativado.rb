@@ -1,0 +1,2 @@
+class ProblemaNegativado < ApplicationRecord
+end

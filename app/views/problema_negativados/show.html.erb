@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @problema_negativado %>
+
+<div>
+  <%= link_to "Editar", edit_problema_negativado_path(@problema_negativado) %> |
+  <%= link_to "Voltar para os problemas com voos", problema_negativados_path %>
+<br><br>
+  <%= button_to "Apagar", @problema_negativado, method: :delete %><br><br>
+  <%= link_to "Voltar para o menu", root_path %>
+</div>

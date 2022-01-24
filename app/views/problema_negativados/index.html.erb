@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Problema negativados</h1>
+
+<div id="problema_negativados">
+  <% @problema_negativados.each do |problema_negativado| %>
+    <%= render problema_negativado %>
+    <p>
+      <%= link_to "Visualizar", problema_negativado %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Adicionar nova ocorrência", new_problema_negativado_path %><br><br>
+<%= link_to "Voltar", root_path %>

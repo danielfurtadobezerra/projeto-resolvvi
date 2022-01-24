@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Problema voos</h1>
+
+<div id="problema_voos">
+  <% @problema_voos.each do |problema_voo| %>
+    <%= render problema_voo %>
+    <p>
+      <%= link_to "Visualizar", problema_voo %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Adicionar nova ocorrência", new_problema_voo_path %><br><br>
+<%= link_to "Voltar", root_path %>
